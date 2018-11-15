@@ -1,0 +1,75 @@
+#global { text-align: center; }
+#route {overflow-y: auto;}
+#map {float: left; }
+#options { width: 300px;float: left;   }
+.panel { background-color: #E8ECF9; border: 1px dashed black; padding: 5px; margin: 10px 0 10px 0;}
+.titre { text-align: left; font-weight: bold; margin: 0 0 5px 0; }
+.inputTxt { width: 210px; }
+    
+#container{position:relative;margin:auto;padding:5px 0px 20px 0px;}
+#container h1{margin:0px 0px 10px 20px;}
+#container #map{width:100%;height:400px;margin:auto;}
+#container #panel{width:100%;margin:auto;clear: both;}
+#container #destinationForm{width: 100%;margin:0px 0px 10px 0px;background:#EEEEEE;padding:10px 20px;border:solid 1px #C0C0C0;}
+#container #destinationForm input[type=text]{border:solid 1px #C0C0C0;}
+#envoi-message:hover{border:3px solid orange;background-color:#D8D8D8}
+
+#principal-annonce{width:990px;border-radius: 10px 10px 10px 10px;padding: 20px 20px 20px 20px;margin-top:10px;margin:auto;min-height: 500px;}
+
+#bloc-principal-gauche {float:left;}
+#bloc-titre-annonce {float:left;color:grey;width:600px;}
+#titre-annonce {font-size:25px}
+#prix-annonce {color:orange;font-size:25px;margin-top:20px}
+#infos-annonceurs {float:right;width:270px;margin: 0px 0px 5px 0px;padding: 5px 20px 5px;border:3px solid grey;border-radius: 10px;-moz-border-radius: 10px;cursor:pointer}
+#infos-annonceurs.blue{float:left;margin-left: 20px;margin-top: 7px;font-size:15px;font-weight:bold}
+#bluetitle{font-size:15px;color: #5085c5;margin: 0px 0 0 10px;font-weight:bold;}
+#bloc-photos-annonce ul li {margin-right:10px}
+#bloc-desc-annonce {float:left;width:500px;margin-top:20px; clear: both;font-size:12px}
+#titre-bloc-msg{float:left;margin-left: 30px;margin-top: 7px;font-size:15px;font-weight:bold;}
+#logoMessage {float:left;margin-left: 20px;width:32px}
+
+#bloc-contact-user {float:right; width:320px}
+#envoi-message {float:right;width:310px;border:3px solid grey;border-radius:10px;-moz-border-radius:10px;}
+#google-map {float: none;width: 100%;margin:auto}
+#module-facebook {margin:20px auto;width: 100%;}
+#bloc-nom-facebook {height: 50px;color: #005599;width: 100%;margin: auto;}
+#bloc-nom-maps {margin: 10px auto; width:280px;color:orange}
+.images-annonce{width:250px;}
+
+@media screen and (min-width:600px) and (max-width:1000px){
+   body{width:768px;}
+   #principal-annonce{width:100%;margin:auto;}
+   #bloc-photos-annonce {width:100%}
+   #bloc-contact-user{margin:auto; float:none}
+   #google-map {float: none;width: 95%;margin:auto}
+   #module-facebook {float:none;margin:auto;clear:both;}
+   #bloc-nom-facebook {margin-left: auto;margin-right: auto;}
+   #bloc-nom-maps {margin: 10px auto; width:280px;color:orange}
+
+
+   #bloc-titre-annonce {width:410px;}
+   #titre-annonce {font-size:25px}
+   #prix-annonce {font-size:20px;margin-top:20px}
+   .images-annonce{width:250px;}
+   
+}
+
+@media screen and (max-width:600px){
+  body{width:500px;font-size:15px}
+  #principal-annonce{width:100%;border-radius: 10px;padding: 5px;margin-top:10px;margin:auto;}
+  #prix-annonce {font-size:20px;margin-top:0px}
+  #bloc-titre-annonce {width:100%}
+  #titre-annonce {font-size:30px}
+  #infos-annonceurs {width:100%;margin: 0px ;padding: 5px;border:3px solid grey;border-radius: 10px ;-moz-border-radius: 10px ;font-size:15px}
+  #bluetitle{font-size:22px !important;color: #5085c5;}
+  #bloc-photos-annonce ul li {margin-top:5px}
+  #bloc-desc-annonce {width:100%;font-size:15px;margin:10px 0 20px 0}
+  .images-annonce{width:100%;margin:auto}
+  #bloc-contact-user {width:100%}
+  #envoi-message {width:100%;height:auto}
+  #titre-bloc-msg{font-size:25px;margin:15px 0 0 25px}
+  #logoMessage {float:left;margin-left: 20px;width:60px}
+
+  #destinationForm form div label{ font-size: 17px;}
+  #bloc-nom-facebook {text-align:center;width:60%}
+}

@@ -1,0 +1,461 @@
+/********************************************************************************\
+*
+*   This file is part of PHP Web Manager.
+*   Copyright (c) 2010-2011 SimpleGeek. All rights reserved.
+*   http://www.simplegeek.fr/
+* 
+*   PHP Web Manager is free software; you can redistribute it and/or
+*   modify it under the terms of the GNU General Public License
+*   as published by the Free Software Foundation; either version 2
+*   of the License, or (at your option) any later version.
+* 
+*   PHP Web Manager is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+* 
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, write to the Free Software
+*   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*  
+\*********************************************************************************/
+
+
+/**
+* PHP Web Manager: Reloaded
+* Fichier: global.css
+* Dernière modification: 10/06/2010
+* Copyright (C) SimpleGeek 2010-2011
+**/ 
+
+/************************/
+/* -- CSS des liens --
+/* -- Non connecté
+/**/
+div.global a 			{ color: #0085c3; text-decoration: none; }
+div.global a:visited 	{ color: #0085c3; text-decoration: none; }
+div.global a:hover 	{ color: #1b5c9e; text-decoration: none; }
+
+/************************/
+/* -- CSS des liens --
+/* -- Connecté
+/**/
+a 			{ color: #000000; text-decoration: none; }
+a:visited 	{ color: #000000; text-decoration: none; }
+a:hover 		{ color: #FF0000; text-decoration: none; }
+
+table.foot a:hover 		{ color: #000000; text-decoration: none; }
+
+a.inp, a.inp:link, a.inp:visited {
+	color: #000000;
+	padding: 2px;
+	border: 1px solid #D3D3D3;
+	text-decoration: none;
+	background-image: url("../images/bg_lien.gif");
+}
+
+a.inp:hover {
+	background-image: url("../images/bg_lien2.gif");
+	border: 1px solid #808080;
+	text-decoration: none;
+}
+
+a.logout, a.logout:link, a.logout:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.logout:hover {
+	color: #FF0000;
+	text-decoration: none;
+}
+
+/************************/
+/* -- CSS du body --
+/**/
+body {
+	overflow: hidden;
+	margin: 2px;
+	font-family: Verdana, Arial;
+	font-size: 11px;
+	text-align: left;
+}
+
+/************************/
+/* -- CSS du "global" --
+/**/
+div.global {
+	width: 50%;
+	border: 1px inset #969696;
+	background: url("../images/text_accueil.png") 5% center no-repeat #F3F3F3;
+	text-align: center;
+	margin: auto;
+	margin-top: 8%;
+	padding: 10px 25px 10px 25px;
+	font-size: 11px;
+}
+
+/************************/
+/* -- CSS du "erreur" --
+/**/
+div.erreur {
+	width: 50%;
+	border: 1px inset #969696;
+	background: url("../images/error_accueil.png") 5% center no-repeat #F3F3F3;
+	text-align: center;
+	margin: auto;
+	margin-top: 8%;
+	padding: 10px 25px 10px 25px;
+	font-size: 11px;
+}
+
+/************************/
+/* -- CSS du listing --
+/**/
+div.listing {
+	left: 1px;
+	position: fixed;
+	top: 35px;
+	width: 99%;
+	text-align: left;
+	margin-top: 12px;
+	padding-bottom: -15px;
+	margin-left: 4px;
+	font-size: 11px;
+	height: 81%;
+	overflow: auto;
+}
+
+div.listing tr.opacity:hover {
+	opacity: 0.5;
+}
+
+table.list {
+	cursor: default;
+	border: 1px solid gray;
+	background: #F0F0F0;
+}
+
+table.list img {
+	border: 0px;
+}
+
+th {
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+a.none,a.none:hover,a.nowrite,a.noread {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.nowrite:hover {
+	color: #707070;
+}
+
+a.noread:hover {
+	color: red;
+}
+
+/* Séléction */
+
+td.checked span.bg {
+background-color:#E0E0E0;
+padding:3px;
+padding-right:8px;
+border-radius:7px;
+}
+
+td.checked {
+text-indent:4px;
+}
+
+input.more {
+	color: #000000;
+	font-family: "MS Sans Serif",arial;
+	font-size: 12px;
+	width: 211px;
+	border: none;
+	cursor: default;
+	background: url("../images/actions/list.gif") transparent;
+	background-repeat: no-repeat;
+	padding: 4px;
+	text-indent: 5px;
+}
+
+/************************/
+/* -- CSS des listes --
+/**/
+ul.listing {
+	padding-left: 200px;
+	text-align: left;
+	list-style-image: url("../images/arrow_accueil.png");
+}
+
+/************************/
+/* -- CSS du head --
+/**/
+table.head {
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	background: url("../images/panth.gif") #F0F0F0;
+	border: 1px solid #989898;
+	border-collapse: collapse;
+}
+	table.head td {
+		vertical-align: middle;
+		white-space: nowrap;
+	}
+	
+/************************/
+/* -- CSS du Submit --
+/**/
+input.go {
+	text-indent: 0px;
+	padding: 1px;
+	font-size: 10px;
+}
+	
+/************************/
+/* -- CSS du password --
+/**/
+input.up {
+	background-color: white;
+	text-indent: 2px;
+	color: black;
+	font: normal 11px Verdana;
+	border: 1px inset #969696;
+}
+
+/************************/
+/* -- CSS du footer --
+/**/
+table.foot {
+	left: 5px;
+	position: fixed;
+	bottom: 5px;
+	background: url("../images/panth.gif") #F0F0F0;
+	border: 1px solid #989898;
+	border-collapse: collapse;
+}
+	table.foot td {
+		vertical-align: middle;
+		white-space: nowrap;
+	}
+
+/************************/
+/* -- CSS de newconfig --
+/**/
+input.reg {
+	border: 1px inset black;
+	text-indent: 1px;
+	padding: 1px;
+	font-family: "Microsoft Sans Serif", "MS Sans Serif", arial;
+	font-size: 10px;
+	border: 1px inset #969696;
+}
+
+select {
+	font: 10px normal "Microsoft Sans Serif",LineDraw,"Trebuchet MS";
+}
+
+#bind {
+	margin: 15px;
+	margin-top: 30px;
+}
+
+#bind ul {
+	margin-left: 30px;
+	margin-top: 20px;
+	list-style-image: url("../images/arrow_accueil.png");
+}
+
+#bind li {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+/************************/
+/* -- CSS de upload --
+/**/
+#upload {
+	background: url("../images/upload.png") 75% bottom no-repeat;
+}
+
+div.global2 {
+	left:0px;
+	position:fixed;
+	top:35px;
+	width:99%;
+	text-align:left;
+	margin-top:9px;
+	margin-left:4px;
+	font-size:11px;
+}
+
+input.upd {
+	background-color: white;
+	text-indent: 2px;
+	padding: 2px;
+	color: gray;
+	font: normal 11px Verdana;
+	font-style: italic;
+	border: 1px inset #969696;
+}
+
+input.up {
+	background-color:white;
+	text-indent:2px;
+	color:black;
+	font: normal 11px Verdana;
+	border: 1px inset #969696;
+}
+
+span.title {
+	display:block;
+	font-size:13px;
+	font-weight:bold;
+	padding:5px;
+}
+
+/************************/
+/* -- CSS de edition --
+/**/
+.ico {
+	padding:4px;
+	border: 0px;
+}
+
+.ico:hover {
+	border: 1px solid #A8A8A8 ;
+	border-radius: 4px;
+	padding: 3px;
+}
+
+/************************/
+/* -- CSS de recherche --
+/**/
+div.search {
+	width: 95%;
+	left: 0px;
+	position: fixed;
+	top: 20px;
+	margin: 35px;
+	margin-left: 5px;
+	text-align: left;
+	padding: 20px;
+	font-size: 11px;
+	overflow: auto;
+	border: 1px solid gray;
+	background: #F6F6F6;
+	height: 74%;
+}
+
+input.inputsearch {
+	background-color: white;
+	text-indent: 2px;
+	padding: 2px;
+	color: gray;
+	font: normal 11px Verdana;
+	border: 1px inset #969696;
+}
+
+input.buttonsearch, input.buttonsearch:link, input.buttonsearch:visited {
+	color: #000000;
+	padding: 1px;
+	border: 1px solid #D3D3D3;
+	text-decoration: none;
+	background-image: url("../images/bg_lien.gif");
+	font-family: Verdana, Arial;
+	font-size: 11px;
+}
+
+input.buttonsearch:hover {
+	background-image: url("../images/bg_lien2.gif");
+	border: 1px solid #808080;
+	text-decoration: none;
+	font-family: Verdana, Arial;
+	font-size: 11px;
+}
+
+/************************/
+/* -- CSS du menu --
+/**/
+#options {
+	text-align: left;
+	border: 1px solid #ccc;
+	width: 208px;
+	visibility: hidden;
+	overflow: hidden;
+	font-size: 11px;
+	font-family: "Microsoft Sans Serif",LineDraw,"Trebuchet MS";
+	position: absolute;
+	bottom: 42px;
+	right: 55px;
+	text-indent: 8px;
+	padding-top: 8px;
+	z-index: 100;
+	background: url("../images/panth.gif") #F0F0F0;
+	line-height: 18px;
+	height: 180px;
+}
+
+#options a {
+cursor:default;
+}
+
+#options > ul {
+margin:0px;
+list-style-type: none;
+padding:0px;
+}
+
+#options > ul > li {
+width:100%;
+}
+
+#options a:link, #options a:visited,  #options.hide a:hover {
+text-decoration:none;
+display: block;
+color: #000;
+}
+
+#options.visi a:hover {
+background-color:#778794;
+text-decoration:none;
+color: white;
+}
+
+#options img {
+	border: 0px;
+}
+
+/************************/
+/* -- CSS du chmod --
+/**/
+#octal{
+border-radius: 9px;
+z-index: 200;
+width: 500px;
+height: 300px;
+background: url("../images/panth.gif") #F0F0F0;
+border: 1px solid silver;
+position: fixed;
+top: 21%;
+left: 34%;
+display: none;
+}
+
+input.dd {
+color: #2F4F4F;
+border-radius: 5px;
+font: 11px normal LineDraw,"Trebuchet MS";
+border: 1px outset #C8C8C8 ;
+background-color: #E8E8E8 ;
+padding: 1px;
+}

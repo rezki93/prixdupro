@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link type="text/css" href="../css/ui-lightness/jquery-ui-1.8.2.custom.css" rel="stylesheet" />  
+    <link type="text/css" href="../css/gabriel.css" rel="stylesheet" />  
+    <link type="text/css" href="../css/ihab.css" rel="stylesheet" />  
+    <script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/google_analytics.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui-1.8.2.custom.min.js"></script>
+    <script type="text/javascript" src="../js/dept_xhr.js"></script>
+  </head>
+  
+  <body style="background-color:white;margin-left:40px;width:360px;height:280px">
+  
+    <div style="float:left;width:310px;margin-right:20px;margin-bottom:20px;border:3px solid grey;border-radius: 10px 10px 10px 10px;-moz-border-radius: 10px 10px 10px 10px;">
+      <form method="POST" name="envoi_message" enctype="multipart/form-data" action="../index.php?page=envoyer_message">
+        <img src="../images/mail.png" style="float:left;margin-left: 20px;">
+        
+        <h2 class="blue" style="float:left;margin-left:30px;margin-top: 10px;">Contactez-nous</h2>
+        <div style="float:left;margin-top:10px;margin-left:10px">
+          <div style="float:left;margin: 3px;width:80px">Votre nom :</div>
+          <input type="text" class="" style="width:200px;" maxlength="30" id="sender_name" name="sender_name"  />
+        </div>
+        
+        <div style="float:left;;margin-left:10px">
+          <div style="float:left;margin: 3px;width:80px">Votre email:</div>
+          <input type="text" class="" style="width:200px;" id="sender_email" name="sender_email" />
+        </div>
+        
+        <div style="float:left;;margin-left:10px">
+          <div style="float:left;margin: 3px;width:80px">Votre telephone: (facultatif)</div>
+          <input type="text" class="" style="width:200px;" id="sender_tel" name="sender_tel" />
+        </div>
+        
+        <div style="float:left;;margin-left:10px">
+          <div style="float:left;margin: 3px;width:80px">Votre message :</div>
+          <div style="float:left"><TEXTAREA style="width: 200px;" rows="4" cols="29" maxlength="4000" id="sender_msg" name="sender_msg" onkeyup="this.value = this.value.substr(0,200);" ></TEXTAREA></div>
+        </div>
+        <input type="hidden" name="destinataire_msg" value="rezki.kies@gmail.com" />
+        <input type="hidden" name="ref_annonce" value="00" />
+        
+        <div class="blue-button2" id="envoyer_message" name="envoyer_message" style="float:right;margin:10 10 10 0px;">Envoyer</div>  
+      </form>
+    </div>
+  
+  </body>
+</html>

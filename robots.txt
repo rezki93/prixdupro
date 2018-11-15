@@ -1,0 +1,5 @@
+user-agent : *
+
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /*PHPSESSID

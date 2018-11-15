@@ -1,0 +1,93 @@
+#salutation {float:left;margin:5px 10px 0 0}
+
+/* Bloc Présentation */
+#tabs{width:984px}
+#principal{width:990px;border-radius: 10px 10px 10px 10px;}
+.inputlogin{float:left;margin: 5px;}
+.blocInputRecherche{float:left;margin-left:20px;width:220px}
+#carte-france{margin-left: -62px;margin-top: 7px;display: none;position: absolute;border: 2px solid rgb(80, 133, 197);border-radius: 5px;
+background-color: rgb(255, 255, 255);}
+#bloc_photos{width: 250px;float: left;margin-left:20px}
+
+/* Bloc Annonce dans page d acceuil */
+.bandeau-annonce {border :2px solid transparent; border-radius: 20px; width:890px;color: #666666;margin:auto}
+.bandeau-annonce:hover { border :2px solid gray;}
+.bloc-images-annonce{width:150px; float:left;margin-left:0px;text-align:center;height:80px;line-height: 75px;}
+.blocTitre {float:left;margin-left:40px;width:320px}
+.titre-annonce-acceuil{float:left;width:320px;text-decoration:underline;font-size: 15px;color: green;font-weight:bold}
+.date-annonce-acceuil {float:left;width:140px;margin-top:5px;font-weight:bold;font-size:12px}
+.desc-annonce-acceuil{float:left;width:300px;margin-top:5px;font-weight:bold;}                                   
+.blocGeo {float:right;margin-right:20px}
+.blocPrix {float:left;width:200px;margin-left:20px;font-size: 25px;font-weight:bold}
+.map {float:right; margin-left:10px;width: 30px;}
+
+#select-nb-annonce{margin: 0px 0 0 0px;float:left}
+#select-tri{margin: 5px 5px 0 0;float:right}
+#contener-pagination {float: left;width:63%}
+
+/*Info bulles logo map */
+.map span{position:absolute; margin-top: -10px;margin-left: 3px;color:orange; background:rgba(50,50,50,.9); padding:10px; border-radius:20px; box-shadow:0 0 2px rgba(0,0,0,.5);transform:scale(0) rotate(-12deg);transition:all .25s;opacity:0;width:100px }
+.map:hover span,.map:focus span{transform:scale(1) rotate(0); opacity:1; }
+.map span::before { content:""; position:absolute;left:-10px;top:14px; height:0;width:0; /* les bordures */ border-right:16px solid #AAAAAA; border-bottom:8px solid transparent; border-top:8px solid transparent; }
+
+
+/* Footer  */
+#footer-depot-annonces {width:100%;min-height:130px; border-bottom: 1px solid #94D7E6;border-top: 1px solid #94D7E6; margin: 0 0 1px;padding:5px;border-top: 2px solid #d4d4d4;background-color: #3b3b3b;}
+
+
+
+/* Tablette */
+@media screen and (min-width:600px) and (max-width:1000px){
+  body{width:768px;}
+  #tabs{width:100%}
+  #principal{width:100%;border-radius: 10px;}
+  .bandeau-annonce {width:100%;}
+  .titre-annonce-acceuil {width:100%;font-size:16px}
+  .desc-annonce-acceuil {width:100%}
+  .bloc-images-annonce{width:120px; height:80px;float:left;margin-left:0px}
+  .blocTitre{ margin-left: 10px;width: 250px; }
+  #contener-pagination {float:left;width:53%}
+
+  /* Footer  */
+  #footer-depot-annonces { width:100%;}
+
+}
+
+/* Mobile */
+@media screen and (max-width:600px){
+  body{width:500px;}
+  #tabs{width:100%;font-size:14px}
+  #tabs-1, #tabs-2, #tabs-3 {padding:10px}
+
+  /* Bloc Présentation */
+  #principal{width:100%;border-radius: 10px;}
+  .bandeau-annonce {width:100%;}
+  .blocInputRecherche{margin-left:0px;width:50%}
+  #carte-france{margin-left: -62px;}
+
+  .bloc-images-annonce{width:120px; height:80px;float:left;margin-left:0px}
+  .bloc-images-annonce p {width: 100%;height: 100%;}
+  .bloc-images-annonce p img{max-width: 100%;max-height: 100%;}
+  .bloc-sans-image{float :left; width:150px; height:80px;margin-left:0px;max-width: 100%;
+max-height: 80px;}
+
+  .blocTitre{ margin-left: 10px;width: 230px; }
+  .titre-annonce-acceuil {width:100%;font-size:17px}
+  .desc-annonce-acceuil{display:none}
+  .date-annonce-acceuil {display:none}
+  .blocPrix{margin-left:10px}
+  .blocGeo{margin-right:10px}
+
+  #select-nb-annonce{margin: 0px 0 0 5px;float:left}
+  #select-tri{margin: 0px 0px 0 0px;float:right}
+  #contener-pagination {width:100%}
+
+
+  /* Footer  */
+  #footer-depot-annonces {width:100%;}
+
+
+}
+
+
+.

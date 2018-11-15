@@ -1,0 +1,138 @@
+/********************************************************************************\
+*
+*   This file is part of PHP Web Manager.
+*   Copyright (c) 2010-2011 SimpleGeek. All rights reserved.
+*   http://www.simplegeek.fr/
+* 
+*   PHP Web Manager is free software; you can redistribute it and/or
+*   modify it under the terms of the GNU General Public License
+*   as published by the Free Software Foundation; either version 2
+*   of the License, or (at your option) any later version.
+* 
+*   PHP Web Manager is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+* 
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, write to the Free Software
+*   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*  
+\*********************************************************************************/
+
+
+/**
+* PHP Web Manager: Reloaded
+* Fichier: phpinfo.css
+* Dernière modification: 10/06/2010
+* Copyright (C) SimpleGeek 2010-2011
+**/ 
+
+/************************/
+/* -- CSS du TESTDIV --
+/**/
+
+.testdiv {
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	color: #536482;
+	font-size: 11px;
+	text-shadow: 1px 1px 0px white;
+	/*background: white;
+	border-radius: 10px;
+	border: 1px inset darkgray;
+	width: 50%;
+	margin: auto;
+	padding: 5px;*/
+}
+
+input {
+	color: #000000;
+	padding: 1px;
+	border: 1px solid #D3D3D3;
+	text-decoration: none;
+	background-image: url("../images/bg_lien.gif");
+	font-family: Verdana, Arial;
+	font-size: 11px;
+	cursor: pointer;
+}
+
+input:hover {
+	background-image: url("../images/bg_lien2.gif");
+	border: 1px solid #808080;
+	text-decoration: none;
+	font-family: Verdana, Arial;
+	font-size: 11px;
+}
+
+/************************/
+/* -- CSS du PHPINFO --
+/**/
+
+body {
+	background-color: #F6F6F6;
+	width: 99%;
+}
+
+.phpinfo {
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	color: #536482;
+	font-size: 11px;
+	margin-top: 15px;
+}
+
+
+.phpinfo table {
+	border: 1px solid #CCCFD3;
+	background-color: #FFFFFF;
+	padding: 1px;
+	width: 100%;
+}
+
+.phpinfo th {
+	padding: 3px 4px;
+	color: #FFFFFF;
+	background: #70AED3 url("http://theorderclan.free.fr/forum/adm/images/gradient2b.gif") bottom left repeat-x;
+	border-top: 1px solid #6DACD2;
+	border-bottom: 1px solid #327AA5;
+	text-align: left;
+	font-size: 0.75em;
+	text-transform: uppercase;
+}
+
+.phpinfo td {
+	padding: 4px;
+	line-height: 1.20em;
+}
+
+.row1 { background-color: #F9F9F9; width: 200px;}
+.row2 { background-color: #DCEBFE; }
+
+.phpinfo a 			{ color: #0085c3; text-decoration: none; }
+.phpinfo a:visited 	{ color: #0085c3; text-decoration: none; }
+.phpinfo a:hover 	{ color: #1b5c9e; text-decoration: none; }
+
+.phpinfo {
+	overflow: auto;
+	width: 99%;
+	direction: ltr;
+}
+
+.phpinfo h2 {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: normal;
+	color: #115098;
+	text-align: left;
+	margin-top: 25px;
+	margin-bottom: 0px;
+	font-size: 20px;
+	text-shadow: 1px 1px 0px white;
+}
+
+h1 {
+	color: #115098;
+	line-height: 1.2em;
+	margin-bottom: 0;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: normal;
+	text-shadow: 1px 1px 0px white;
+}

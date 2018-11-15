@@ -1,0 +1,53 @@
+html {
+  cursor: text;
+}
+
+.editbox {
+  margin: .4em;
+  margin-bottom: 0px;
+  padding: 0;
+  padding-left: 5px;
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 12pt;
+}
+
+pre.code, .editbox {
+  color: #666666;
+}
+
+.editbox p {
+  margin: 0;
+}
+
+span.css-at {
+  color: #004499;
+}
+
+span.css-unit {
+  color: orange;
+}
+
+span.css-value {
+  color: #004499;
+}
+
+span.css-identifier {
+  color: grey;
+}
+
+span.css-important {
+  color: #8080c0;
+}
+
+span.css-colorcode {
+  color: #770088;
+}
+
+span.css-comment {
+  color: #008000;
+}
+
+span.css-string {
+  color: red;
+}

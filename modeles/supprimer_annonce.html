@@ -1,0 +1,9 @@
+<?php
+
+function supprimer_annonce()
+{
+		$ref = $_GET['ref'];
+		$chaine="DELETE FROM ANNONCES WHERE ANNONCES.id_annonce ='".$ref;
+		mysql_query("DELETE FROM membres WHERE pseudo='test'");
+		$req = mysql_query($chaine);
+}

@@ -1,0 +1,83 @@
+/********************************************************************************\
+*
+*   This file is part of PHP Web Manager.
+*   Copyright (c) 2010-2011 SimpleGeek. All rights reserved.
+*   http://www.simplegeek.fr/
+* 
+*   PHP Web Manager is free software; you can redistribute it and/or
+*   modify it under the terms of the GNU General Public License
+*   as published by the Free Software Foundation; either version 2
+*   of the License, or (at your option) any later version.
+* 
+*   PHP Web Manager is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+* 
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, write to the Free Software
+*   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*  
+\*********************************************************************************/
+
+
+/**
+* PHP Web Manager: Reloaded
+* Fichier: copiemove.css
+* Dernière modification: 10/06/2010
+* Copyright (C) SimpleGeek 2010-2011
+**/
+
+/************************/
+/* -- CSS du head --
+/**/
+table.head {
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	background: url("../images/panth.gif") #F0F0F0;
+	border: 1px solid #989898;
+	border-collapse: collapse;
+}
+	table.head td {
+		vertical-align: middle;
+		white-space: nowrap;
+	}
+
+/************************/
+/* -- CSS de copie --
+/**/
+body {
+	font-family: Verdana, Arial;
+	font-size: 11px;
+}
+
+div.title {
+	margin-top: 45px;
+	display:block;
+	font-size:13px;
+	font-weight:bold;
+	padding:5px;
+}
+
+div.center {
+	background-color: white;
+	width: 85%;
+	height: 150px;
+	overflow: auto;
+	padding: 10px;
+	text-align: left;
+	border: 1px inset #C0C0C0;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+a, a:link, a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: none;
+}
