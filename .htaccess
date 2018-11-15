@@ -1,0 +1,132 @@
+RewriteEngine on
+
+# DEBUT - Enleve les slash de fin d'url
+#
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+#
+# FIN - Enleve le slash de fin d'url
+
+
+
+# DEBUT - Forcer le www.
+#
+#RewriteCond %{HTTP_HOST} !^stage.prixdupro.fr$
+#RewriteRule ^(.*)   http://stage.prixdupro.fr/$1  [QSA,L,R=301]
+#
+# FIN - Forcer le www.
+
+
+
+# DEBUT - Redirige les urls avec phpsessid
+#
+RewriteCond %{QUERY_STRING} PHPSESSID=.*$
+RewriteRule .* %{REQUEST_URI}? [R=301,L]
+#
+# FIN - Redirige les urls avec phpsessid
+
+
+
+
+# DEBUT - Reecriture d'urls
+#
+RewriteRule ^erreur404$                 index.php?page=erreur404 [L]
+ErrorDocument 404                       /erreur404
+
+RewriteRule ^recherche$  	        index.php [L]
+RewriteRule ^gestion$   	        index.php?page=gestion [L]
+RewriteRule ^dashboard$   	        index.php?page=dashboard [L]
+RewriteRule ^envoyer_message$   	index.php?page=envoyer_message [L]
+RewriteRule ^deposer-annonce$   	index.php?page=deposer_son_annonce [L]
+RewriteRule ^contact$   	        /templates/contact.html [L]
+RewriteRule ^qui-sommes-nous$   	index.php?page=lp&rub=qui-sommes-nous [L]
+RewriteRule ^acheter-une-voiture$   	index.php?page=lp&rub=acheter-une-voiture [L]
+RewriteRule ^annonce/([0-9]*)$          index.php?page=annonce&ref=$1 [L]
+
+
+
+RewriteRule ^idf/informatique$        index.php?search_region=12&search_categorie=9 [L]
+
+RewriteRule ^alsace$   	                                     index.php?search_region=1 [L]
+RewriteRule ^aquitaine$   	                             index.php?search_region=2 [L]
+RewriteRule ^auvergne$   	                             index.php?search_region=3 [L]
+RewriteRule ^basse-normandie$   	                     index.php?search_region=4 [L]
+RewriteRule ^bourgogne$   	                             index.php?search_region=5 [L]
+RewriteRule ^bretagne$   	                             index.php?search_region=6 [L]
+RewriteRule ^centre$   	                                     index.php?search_region=7 [L]
+RewriteRule ^champagne-ardenne$   	                     index.php?search_region=8 [L]
+RewriteRule ^corse$   	                                     index.php?search_region=9 [L]
+RewriteRule ^franche-comte$   	                             index.php?search_region=10 [L]
+RewriteRule ^haute-normandie$   	                     index.php?search_region=11 [L]
+RewriteRule ^ile-de-france$   	                             index.php?search_region=12 [L]
+RewriteRule ^languedoc-roussillon$   	                     index.php?search_region=13 [L]
+RewriteRule ^limousin$   	                             index.php?search_region=14 [L]
+RewriteRule ^lorraine$   	                             index.php?search_region=15 [L]
+RewriteRule ^midi-pyrenes$   	                             index.php?search_region=16 [L]
+RewriteRule ^nord-pas-de-calais$   	                     index.php?search_region=17 [L]
+RewriteRule ^pays-de-la-loire$   	                     index.php?search_region=18 [L]
+RewriteRule ^picardie$   	                             index.php?search_region=19 [L]
+RewriteRule ^poitou-charantes$   	                     index.php?search_region=20 [L]
+RewriteRule ^alpes-cote-d-azur$   	                     index.php?search_region=21 [L]
+RewriteRule ^rhone-alpes$   	                             index.php?search_region=22 [L]
+RewriteRule ^dom$   	                                     index.php?search_region=23 [L]
+
+
+RewriteRule ^france/auto$                                    index.php?search_categorie=1 [L]
+RewriteRule ^france/moto$                                    index.php?search_categorie=2 [L]
+RewriteRule ^france/caravaning$                              index.php?search_categorie=3 [L]
+RewriteRule ^france/utilitaires$                             index.php?search_categorie=4 [L]
+RewriteRule ^france/equipement-auto$                         index.php?search_categorie=5 [L]
+RewriteRule ^france/equipement-moto$                         index.php?search_categorie=6 [L]
+RewriteRule ^france/equipement-caravaning$                   index.php?search_categorie=7 [L]
+RewriteRule ^france/image-son$                               index.php?search_categorie=8 [L]
+RewriteRule ^france/informatique$                            index.php?search_categorie=9 [L]
+RewriteRule ^france/consoles-jeux-video$                     index.php?search_categorie=10 [L]
+RewriteRule ^france/telephonie$                              index.php?search_categorie=11 [L]
+RewriteRule ^france/immobilier$                              index.php?search_categorie=12 [L]
+RewriteRule ^france/ameublement$                             index.php?search_categorie=13 [L]
+RewriteRule ^france/electromenager$                          index.php?search_categorie=14 [L]
+RewriteRule ^france/bricolage-jardinage$                     index.php?search_categorie=15 [L]
+RewriteRule ^france/vetements$                               index.php?search_categorie=16 [L]
+RewriteRule ^france/accessoire-bagagerie$                    index.php?search_categorie=17 [L]
+RewriteRule ^france/montres-bijoux$                          index.php?search_categorie=18 [L]
+RewriteRule ^france/equipement-bebe$                         index.php?search_categorie=19 [L]
+RewriteRule ^france/dvd$                                     index.php?search_categorie=20 [L]
+RewriteRule ^france/cd$                                      index.php?search_categorie=21 [L]
+RewriteRule ^france/blueray$                                 index.php?search_categorie=22 [L]
+RewriteRule ^france/livres$                                  index.php?search_categorie=23 [L]
+RewriteRule ^france/animaux$                                 index.php?search_categorie=24 [L]
+RewriteRule ^france/sports-hobbies$                          index.php?search_categorie=25 [L]
+RewriteRule ^france/collection$                              index.php?search_categorie=26 [L]
+RewriteRule ^france/jeux-jouets$                             index.php?search_categorie=27 [L]
+RewriteRule ^france/vins-gastronomie$                        index.php?search_categorie=28 [L]
+RewriteRule ^france/billeterie$                              index.php?search_categorie=29 [L]
+RewriteRule ^france/evenements$                              index.php?search_categorie=30 [L]
+RewriteRule ^france/services$                                index.php?search_categorie=31 [L]
+RewriteRule ^france/emplois$                                 index.php?search_categorie=32 [L]
+RewriteRule ^france/cours-particuliers$                      index.php?search_categorie=33 [L]
+RewriteRule ^france/recherche$                               index.php?search_categorie=34 [L]
+RewriteRule ^france/autre$                                   index.php?search_categorie=35 [L]
+
+
+#
+#FIN - Réecriture d'urls
+
+
+
+# DEBUT - Enlever le PHPSESSID dans les urls sur google
+#
+SetEnv SESSION_USE_TRANS_SID 0
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#remove PHPSESSID
+RewriteCond %{QUERY_STRING} PHPSESSID=.*$
+RewriteRule .* %{REQUEST_URI}? [R=301,L]
+</IfModule>
+#
+# FIN - Enlever le PHPSESSID dans les urls sur google
+
+
+
+
+
