@@ -10,7 +10,7 @@ require 'libs/Smarty.class.php';
 $smarty = new Smarty;
   
 if(isset($_REQUEST['dbg'])){
-  // Même chose que error_reporting(E_ALL);
+  // MÃªme chose que error_reporting(E_ALL);
   ini_set('error_reporting', E_ALL);
 }
 
@@ -36,7 +36,7 @@ elseif($_SERVER['HTTP_HOST'] == 'localhost'){
 }
 
 /*ServerRK Stage*/
-elseif($_SERVER['HTTP_HOST'] == 'stage.prixdupro.fr'){
+elseif($_SERVER['HTTP_HOST'] == 'stage.prixdupro.fr' || $_SERVER['HTTP_HOST'] == 'prixdupro.rezki-kies.fr'){
   define("SERVER", "localhost:3307");
   define("USER" , "Rezki");
   define("NAMEBDD" , "stage_prixduprobdd");
