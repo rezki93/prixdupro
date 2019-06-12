@@ -1,8 +1,8 @@
 #salutation {float:left;margin:5px 10px 0 0}
 
-/* Bloc Présentation */
+/* Bloc PrÃ©sentation */
 #tabs{width:984px}
-#principal{width:990px;border-radius: 10px 10px 10px 10px;}
+#principal{width:970px;border-radius: 10px;padding: 10px;}
 .inputlogin{float:left;margin: 5px;}
 .blocInputRecherche{float:left;margin-left:20px;width:220px}
 #carte-france{margin-left: -62px;margin-top: 7px;display: none;position: absolute;border: 2px solid rgb(80, 133, 197);border-radius: 5px;
@@ -59,7 +59,7 @@ background-color: rgb(255, 255, 255);}
   #tabs{width:100%;font-size:14px}
   #tabs-1, #tabs-2, #tabs-3 {padding:10px}
 
-  /* Bloc Présentation */
+  /* Bloc PrÃ©sentation */
   #principal{width:100%;border-radius: 10px;}
   .bandeau-annonce {width:100%;}
   .blocInputRecherche{margin-left:0px;width:50%}
