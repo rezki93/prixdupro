@@ -141,8 +141,8 @@ echo '
       
 echo '
             <select id="select-tri" name="tri" onchange="tri(this.value,'.$nba.')" style="">
-                <option ';if($tri == 0) echo ' selected ';   echo ' value="0">Du + r?cent au - r?cent</option>
-                <option ';if($tri == 1) echo ' selected ';   echo ' value="1">Du - r?cent au + r?cent</option>  
+                <option ';if($tri == 0) echo ' selected ';   echo ' value="0">Du + récent au - récent</option>
+                <option ';if($tri == 1) echo ' selected ';   echo ' value="1">Du - récent au + récent</option>  
                 <option ';if($tri == 2) echo ' selected ';   echo ' value="2">Du - cher au + cher</option>
                 <option ';if($tri == 3) echo ' selected ';   echo ' value="3">Du + cher au - cher</option>
             </select>';
