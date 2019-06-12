@@ -21,7 +21,7 @@
 	<div id="tabs-1" style="">
 		<form method="get" name="rechercher" action="http://www.prixdupro.fr/index.php?page=search">
 			<div class="blocInputRecherche" style="margin:0">
-				<div style="float:left;margin: 3px;">Mots clés :</div>
+				<div style="float:left;margin: 3px;">Mots clés:</div>
 				<input type="text" class="zone-saisie" style="width:140px;float:right" id="search_mot" name="search_mot" onclick="if (this.value == 'Entrez votre recherche') this.value='';" value="{if isset($smarty.request.search_mot)}{$smarty.request.search_mot}{/if}"/>
 			</div>
 			
