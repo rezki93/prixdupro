@@ -146,7 +146,7 @@ echo '
                 <option ';if($tri == 2) echo ' selected ';   echo ' value="2">Du - cher au + cher</option>
                 <option ';if($tri == 3) echo ' selected ';   echo ' value="3">Du + cher au - cher</option>
             </select>';
-echo "<div id='contener-pagination' >".paginate('http://www.prixdupro.fr/index.php?page=search'.$url_paginate.'&tri='.$tri.'&nba='.$nba, '&p=', $countp, $current)."</div>
+echo "<div id='contener-pagination' >".paginate('/index.php?page=search'.$url_paginate.'&tri='.$tri.'&nba='.$nba, '&p=', $countp, $current)."</div>
   
   
         </div>
@@ -260,7 +260,7 @@ for ($i = (($current - 1) * $epp); $i < ( (($current - 1) * $epp) + $epp) && $i 
 }
 ?>
         <div style="margin-top: 10px;">
-            <?php echo paginate('http://www.prixdupro.fr/index.php?page=search'.$url_paginate.'&tri='.$tri.'&nba='.$nba, '&p=', $countp, $current);  ?>    
+            <?php echo paginate('/index.php?page=search'.$url_paginate.'&tri='.$tri.'&nba='.$nba, '&p=', $countp, $current);  ?>    
         </div>
         <div class="clear"></div>
     </div>
